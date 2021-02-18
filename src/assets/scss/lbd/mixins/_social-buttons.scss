@@ -25,17 +25,6 @@
     color: $white-color;
     background-color: $color;
     opacity: 0.9;
-    
-    &:hover,
-    &:focus,
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle{
-        background-color: $color;
-        color: $white-color;
-        opacity: 1;
-    }
-    
   }
   
   

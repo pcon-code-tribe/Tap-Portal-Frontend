@@ -5,9 +5,7 @@ import {
   Card,
   Table,
   Container,
-  Button,
-  Row,
-  Col,
+  Button
 } from "react-bootstrap";
 
 function TableList() {

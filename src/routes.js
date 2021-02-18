@@ -23,7 +23,7 @@ const dashboardRoutes = [
   {
     path: "/table",
     name: "To Apply",
-    icon: "nc-icon nc-notes",
+    icon: "nc-icon nc-tap-01",
     component: toApply,
     layout: "/admin",
   },
@@ -31,7 +31,7 @@ const dashboardRoutes = [
   {
     path: "/allAppliedList",
     name: "All Applied",
-    icon: "nc-icon nc-atom",
+    icon: "nc-icon nc-notes",
     component: allAppliedList,
     layout: "/admin",
   },

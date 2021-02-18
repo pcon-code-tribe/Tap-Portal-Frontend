@@ -4,10 +4,7 @@ import React from "react";
 import {
   Card,
   Table,
-  Container,
-  Button,
-  Row,
-  Col,
+  Container
 } from "react-bootstrap";
 
 function TableList() {
