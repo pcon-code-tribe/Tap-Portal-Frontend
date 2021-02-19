@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+
+
+body,#root,.App-header, html {
+    height: 100%;
+    margin:0;
+    width: 100%;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* css for StudentLogin and ForgotPassword page */
+
+.bg{
+    background-image: url("./images/hostel.jpg") ;
+    height: 100%;  
+ /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(80%);
+  opacity : 0.9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login{
+  padding:4%;
+  margin : auto;
+  border:2px solid black;
+  border-radius: 8px;
+  background-color: rgba(61, 61, 61, 0.479);
+  color:white;
+ 
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.brand{
+padding:3%;
+text-align: center;
+font-size:30px;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
