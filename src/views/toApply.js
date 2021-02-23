@@ -34,7 +34,7 @@ function TableList() {
                       <td>$36,738</td>
                       <td>Already Applied!</td>
                       <td>
-                      <Button variant ="success" size="sm">
+                      <Button className="btn-sm btn-success">
                       Apply
                       </Button>
                       </td>
@@ -45,7 +45,7 @@ function TableList() {
                       <td>$23,789</td>
                       <td>Not applied!</td>
                       <td>
-                      <Button variant ="success" size="sm">
+                      <Button className="btn-sm btn-success">
                       Apply
                       </Button>
                       </td>
@@ -56,7 +56,7 @@ function TableList() {
                       <td>$56,142</td>
                       <td>Applied</td>
                       <td>
-                      <Button variant ="success" size="sm">
+                      <Button className="btn-sm btn-success">
                       Apply
                       </Button>
                       </td>
@@ -67,7 +67,7 @@ function TableList() {
                       <td>$38,735</td>
                       <td>Applied</td>
                       <td>
-                      <Button variant ="success" size="sm">
+                      <Button className="btn-sm btn-success">
                       Apply
                       </Button>
                       </td>
@@ -78,7 +78,7 @@ function TableList() {
                       <td>$63,542</td>
                       <td>Not Applied!</td>
                       <td>
-                      <Button variant ="success" size="sm">
+                      <Button className="btn-sm btn-success">
                       Apply
                       </Button>
                       </td>

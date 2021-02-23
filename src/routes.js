@@ -21,7 +21,7 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/table",
+    path: "/toApply",
     name: "To Apply",
     icon: "nc-icon nc-tap-01",
     component: toApply,

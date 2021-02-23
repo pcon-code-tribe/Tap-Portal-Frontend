@@ -62,24 +62,6 @@ function Notifications() {
         <Card>
           <Card.Header>
             <Card.Title as="h4">Notifications</Card.Title>
-            <p className="card-category">
-              Handcrafted by our friend and colleague{" "}
-              <a
-                href="https://github.com/EINazare"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Nazare Emanuel-Ioan
-              </a>
-              . Please checkout the{" "}
-              <a
-                href="https://github.com/creativetimofficial/react-notification-alert"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                full documentation.
-              </a>
-            </p>
           </Card.Header>
           <Card.Body>
             <Row>

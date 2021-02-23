@@ -122,9 +122,8 @@ function User() {
                     />
                   </Form>
                   <Button
-                    className="btn-fill pull-right mt-1"
+                    className="btn-fill btn-info pull-right mt-1"
                     type="submit"
-                    variant="info"
                   >
                     Upload Resume
                   </Button>
@@ -152,7 +151,7 @@ function User() {
                       className="avatar border-gray"
                       src={require("assets/img/faces/avatar-1.jpe").default}
                     ></img>
-                    <h5 className="title">Student's Name</h5>
+                    <h5 className="title">I am a student of NIT JSR!</h5>
                   </a>
                 </div>
               </Card.Body>

@@ -3,14 +3,13 @@ import { useLocation, NavLink } from "react-router-dom";
 
 import { Nav } from "react-bootstrap";
 
-
-function Sidebar({ color, image, routes }) {
+function Sidebar({image, routes }) {
   const location = useLocation();
   const activeRoute = (routeName) => {
     return location.pathname.indexOf(routeName) > -1 ? "active" : "";
   };
   return (
-    <div className="sidebar" data-image={image} data-color={color}>
+    <div className="sidebar" data-image={image} data-color="black">
       <div
         className="sidebar-background"
         style={{
@@ -30,7 +29,7 @@ function Sidebar({ color, image, routes }) {
               />
             </div>
           </a>
-          <a className="simple-text" href="http://www.nitjsr.ac.in/tap/portfolio/">TAP PORTAL STUDENT</a>
+          <a className="simple-text" href="http://www.nitjsr.ac.in/tap/">TAP PORTAL STUDENT</a>
         </div>
         <Nav>
           {routes.map((prop, key) => {

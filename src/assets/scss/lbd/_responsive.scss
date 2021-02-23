@@ -15,15 +15,8 @@
 
     }
 
-    .footer{
-        height: 60px;
-        .footer-menu{
-            float: left;
-        }
-        .copyright{
-            float: right;
-        }
-    }
+    
+    
     .navbar-nav .nav-item .dropdown-menu:before{
         border-bottom: 11px solid rgba(0, 0, 0, 0.2);
         border-left: 11px solid rgba(0, 0, 0, 0);
@@ -55,13 +48,7 @@
         right: 12px;
     }
 
-    .footer:not(.footer-big){
-        nav > ul{
-           li:first-child{
-             margin-left: 0;
-           }
-        }
-    }
+    
 
     .card{
         form{

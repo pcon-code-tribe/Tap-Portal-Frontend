@@ -193,20 +193,20 @@ body > .navbar-collapse{
         }
     }
 
-    .logo-tim{
-        border-radius: 50%;
-        border: 1px solid #333;
-        display: block;
-        height: 61px;
-        width: 61px;
-        float: left;
-        overflow: hidden;
+    // .logo-tim{
+    //     border-radius: 50%;
+    //     border: 1px solid #333;
+    //     display: block;
+    //     height: 61px;
+    //     width: 61px;
+    //     float: left;
+    //     overflow: hidden;
 
-        img{
-            width: 60px;
-            height: 60px;
-        }
-    }
+    //     img{
+    //         width: 60px;
+    //         height: 60px;
+    //     }
+    // }
 
     &:after,
     &:before{
@@ -239,24 +239,24 @@ body > .navbar-collapse{
     &[data-color="black"]:after{
         @include icon-gradient($default-states-color, $default-states-color);
     }
-    &[data-color="blue"]:after{
-        @include icon-gradient($new-dark-blue, $blue-color-bottom);
-    }
-    &[data-color="azure"]:after{
-        @include icon-gradient($new-blue, $azure-color-bottom);
-    }
-    &[data-color="green"]:after{
-        @include icon-gradient($new-green, $green-color-bottom);
-    }
-    &[data-color="orange"]:after{
-        @include icon-gradient($new-orange, $orange-color-bottom);
-    }
-    &[data-color="red"]:after{
-        @include icon-gradient($new-red, $red-color-bottom);
-    }
-    &[data-color="purple"]:after{
-        @include icon-gradient($new-purple, $purple-color-bottom);
-    }
+    // &[data-color="blue"]:after{
+    //     @include icon-gradient($new-dark-blue, $blue-color-bottom);
+    // }
+    // &[data-color="azure"]:after{
+    //     @include icon-gradient($new-blue, $azure-color-bottom);
+    // }
+    // &[data-color="green"]:after{
+    //     @include icon-gradient($new-green, $green-color-bottom);
+    // }
+    // &[data-color="orange"]:after{
+    //     @include icon-gradient($new-orange, $orange-color-bottom);
+    // }
+    // &[data-color="red"]:after{
+    //     @include icon-gradient($new-red, $red-color-bottom);
+    // }
+    // &[data-color="purple"]:after{
+    //     @include icon-gradient($new-purple, $purple-color-bottom);
+    // }
 }
 
 
@@ -296,73 +296,10 @@ body > .navbar-collapse{
 }
 
 
-.fixed-plugin{
 
-    .dropdown{
-        .dropdown-menu{
-            @include transform-translate-3d-0(-5%);
-            border-radius: 10px;
-            li.adjustments-line{
-                border-bottom: 1px solid #ddd;
-            }
-            li{
-                padding: 5px 2px !important;
-            }
-            .button-container{
-                a{
-                    font-size: 14px;
-                }
-            &.show{
-                @include transform-translate-3d-0(0%);
-                transform-origin: 0 0;
-                left: -303px !important;
-            }
-            }
 
-        }
-    }
 
-}
 
-.fixed-plugin .dropdown .dropdown-menu{
-    @include transform-translate-y-dropdown(-5%);
-    top: -40px !important;
-    opacity: 0;
-    left: -303px !important;
-    transform-origin: 0 0;
-}
-.fixed-plugin .dropdown.show .dropdown-menu{
-    opacity: 1;
-    @include transform-translate-y-dropdown(0%);
-    transform-origin: 0 0;
-    left: -303px !important;
-}
-
-.fixed-plugin .dropdown-menu:before,
-.fixed-plugin .dropdown-menu:after{
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 65px;
-    width: 16px;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-
-}
-.fixed-plugin .dropdown-menu:before{
-    border-bottom: 16px solid rgba(0, 0, 0, 0);
-    border-left: 16px solid rgba(0,0,0,0.2);
-    border-top: 16px solid rgba(0,0,0,0);
-    right: -16px;
-}
-
-.fixed-plugin .dropdown-menu:after{
-    border-bottom: 16px solid rgba(0, 0, 0, 0);
-    border-left: 16px solid #fff;
-    border-top: 16px solid rgba(0,0,0,0);
-    right: -15px;
-}
 
 .modal{
     &.show{

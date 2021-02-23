@@ -1,48 +1,9 @@
 .footer{
-    background-color: $white-color;
-
-    .footer-menu{
-        height: 41px;
-    }
-
-    nav > ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        font-weight: normal;
-
-        a:not(.btn){
-            color: $dark-gray;
-            display: block;
-            margin-bottom: 3px;
-            &:hover,
-            &:focus{
-                color: $default-states-color;
-            }
-        }
-    }
-    .social-area{
-        padding: 15px 0;
-        h5{
-            padding-bottom: 15px;
-        }
-    }
-    .social-area > a:not(.btn){
-       color: $dark-gray;
-       display: inline-block;
-       vertical-align: top;
-       padding: $padding-social-a;
-       font-size: $font-size-large-navbar;
-       font-weight: normal;
-       line-height: $line-height;
-       text-align: center;
-       &:hover,
-       &:focus{
-           color: $default-states-color;
-       }
-    }
+    background-image : linear-gradient(120deg,#20002c,#cbb4d4);
+    background-position: absolute;
+   
     .copyright{
-        color: $default-states-color;
+        color: $dark-gray;
         padding: 10px 15px;
         margin: 10px 3px;
         line-height: 20px;
@@ -52,24 +13,14 @@
         border-color: $medium-gray;
     }
     .title{
-        color: $default-states-color;
+        color: snow;
     }
 }
 
 .footer-default{
-    background-color: $smoke-bg;
+    background-image: url(../../../assets/img/drone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 768px 220px;
 }
 
-.footer:not(.footer-big){
-    nav > ul{
-       font-size: $font-size-base;
-       li{
-            margin-left: 20px;
-            float: left;
-        }
-        a{
-            padding: 10px 0px;
-            margin: 10px 10px 10px 0px;
-        }
-    }
-}
