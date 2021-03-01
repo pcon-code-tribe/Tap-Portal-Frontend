@@ -10,7 +10,7 @@ body,#root,.App-header, html {
 /* css for StudentLogin and ForgotPassword page */
 
 .bg{
-    background-image: url("./images/hostel.jpg") ;
+    background-image: url("./assets/hostel.jpg") ;
     height: 100%;  
  /* Center and scale the image nicely */
   background-position: center;
@@ -18,14 +18,15 @@ body,#root,.App-header, html {
   background-size: cover;
   filter: brightness(80%);
   opacity : 0.9;
+  overflow:auto
 }
 
 .login{
   padding:4%;
   margin : auto;
-  border:2px solid black;
+  border:1px solid white;
   border-radius: 8px;
-  background-color: rgba(61, 61, 61, 0.479);
+  background-color: rgba(0, 0,0, 0.5);
   color:white;
  
   
