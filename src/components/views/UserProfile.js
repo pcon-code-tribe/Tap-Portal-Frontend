@@ -149,7 +149,7 @@ function User() {
                     <img
                       alt="..."
                       className="avatar border-gray"
-                      src={require("assets/img/faces/avatar-1.jpe").default}
+                      src={require("assets/img/avatar-1.jpe").default}
                     ></img>
                     <h5 className="title">I am proud to be a student at NIT JSR!</h5>
                   </a>
