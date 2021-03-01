@@ -36,7 +36,7 @@ function Footer() {
             </Row>
             <Row className="d-flex justify-content-center align-items-center title">Phone: +91-9430335621</Row>
             <Row className="d-flex justify-content-center align-items-center copyright">
-              &copy; {new Date().getFullYear()}Copyright:<a href="http:www.nitjsr.ac.in">NIT JSR</a> | Image Courtesy: <a href="https://www.instagram.com/official.phocus/"> Phocus</a>
+              &copy; {new Date().getFullYear()}Copyright:<a href="http://www.nitjsr.ac.in/">NIT JSR</a> | Image Courtesy: <a href="https://www.instagram.com/official.phocus/"> Phocus</a>
             </Row>
           </div>
         </div>
