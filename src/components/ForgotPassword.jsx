@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import {Button,Form} from 'react-bootstrap';
 import {useHistory} from "react-router-dom";
 import'bootstrap/dist/css/bootstrap.css';
-import collegeLogo from '../images/collegeLogo.png';
+import collegeLogo from '../assets/collegeLogo.png';
 
 // component to render forgot password page
 function ForgotPassword(){
@@ -37,7 +37,7 @@ function ForgotPassword(){
                <Form onSubmit={handleSubmit}>
                   {/* email id field */}
                   <Form.Group controlId="formBasicEmail">
-                     <Form.Label>Retrieve Password</Form.Label>
+                     <Form.Label>Forgot your Password! Don't Worry, Retrieve it here..</Form.Label>
                      <Form.Control type="email" required placeholder="Enter email" value={ForgotPasswordMail} onChange={handleChange} style={{color:"black"}} />
                   </Form.Group>
                   {/* submit button of form */}

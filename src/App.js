@@ -1,28 +1,66 @@
-import React from "react"; 
-import './App.css';
-import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
-import StudentLogin from "./components/StudentLogin.jsx";
-import ForgotPassword from "./components/ForgotPassword.jsx";
-import Register from "./components/Register.jsx";
-import RetrieveSuccess from "./components/RetrieveSuccess.jsx";
-import RegisterSuccess from "./components/RegisterSuccess.jsx";
 
 
-function App() {
+import React from "react";
+import { useLocation, Route, Switch } from "react-router-dom";
+
+import AdminNavbar from "components/Navbars/AdminNavbar";
+import Footer from "components/Footer/Footer";
+import Sidebar from "components/Sidebar/Sidebar";
+
+
+import routes from "routes.js";
+
+import sidebarImage from "assets/img/sidebar-3.jpg";
+
+function Admin() {
+  const [image] = React.useState(sidebarImage);
+  const [color] = React.useState("black");
+  const [hasImage] = React.useState(true);
+  const location = useLocation();
+  const mainPanel = React.useRef(null);
+  const getRoutes = (routes) => {
+    return routes.map((prop, key) => {
+      if (prop.layout === "/admin") {
+        return (
+          <Route
+            path={prop.layout + prop.path}
+            render={(props) => <prop.component {...props} />}
+            key={key}
+          />
+        );
+      } else {
+        return null;
+      }
+    });
+  };
+  React.useEffect(() => {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    mainPanel.current.scrollTop = 0;
+    if (
+      window.innerWidth < 993 &&
+      document.documentElement.className.indexOf("nav-open") !== -1
+    ) {
+      document.documentElement.classList.toggle("nav-open");
+      var element = document.getElementById("bodyClick");
+      element.parentNode.removeChild(element);
+    }
+  }, [location]);
   return (
-    <div className="App-header">
-     <Router>
-       <Switch>
-        <Route exact path="/"  component={StudentLogin} />
-        <Route exact path="/forgotPassword" component={ForgotPassword} />
-        <Route exact path="/Register" component={Register} />
-        <Route exact path="/RegisterSuccess" component={RegisterSuccess} />
-        <Route exact path="/RetrieveSuccess" component={RetrieveSuccess} />
-       </Switch> 
-     </Router>
-    
-    </div>
+    <>
+      <div className="wrapper">
+        <Sidebar color={color} image={hasImage ? image : ""} routes={routes} />
+        <div className="main-panel" ref={mainPanel}>
+          <AdminNavbar />
+          <div className="content">
+            <Switch>{getRoutes(routes)}</Switch>
+          </div>
+          <Footer />
+        </div>
+      </div>
+    </>
   );
 }
 
-export default App;
+export default Admin;
+
