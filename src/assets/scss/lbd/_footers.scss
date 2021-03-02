@@ -1,0 +1,36 @@
+.footer{
+    background-image : linear-gradient(120deg,#20002c,#cbb4d4);
+    background-position: absolute;
+   
+    .copyright{
+        color: $dark-gray;
+        padding: 10px 15px;
+        margin: 10px 3px;
+        line-height: 20px;
+        font-size: $font-size-base;
+    }
+    hr{
+        border-color: $medium-gray;
+    }
+    .title{
+        color: snow;
+    }
+}
+
+.footer-default{
+    background-image: url(../../../assets/img/drone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 768px 220px;
+
+    a{
+        color: $info-color;
+      
+        &:hover, &:focus{
+           color: $primary-color;
+           text-decoration: none;
+        }
+      }
+      
+}
+

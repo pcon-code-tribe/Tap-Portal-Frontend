@@ -2,14 +2,14 @@ import React,{useState} from "react";
 import {Button,Form} from 'react-bootstrap';
 import {Link} from "react-router-dom";
 import'bootstrap/dist/css/bootstrap.css';
-import collegeLogo from '../images/collegeLogo.png';
-
+import collegeLogo from '../assets/collegeLogo.png';
+import {useHistory} from "react-router-dom";
 // for Student login page 
 
 function StudentLogin(){
    
    //adding state to component
-
+   const history=useHistory();
    const [LoginDetails,setLoginDetails]=useState({
       email:"",
       password:""
@@ -34,6 +34,7 @@ function StudentLogin(){
          email:"",
          password:""
       });
+      history.push("/admin/dashboard");
    }
 
      return(
@@ -44,7 +45,7 @@ function StudentLogin(){
                 <img src={collegeLogo} alt="logo"></img>
                 <p className="brand-name">NITJSR Placement Portal</p>
              </div>
-             <div className="col-md-4 login">
+             <div className="col-md-4 login" style={{height :"400px"}}>
                 <Form onSubmit={handleSubmit}>
                    {/* email field */}
                    <Form.Group controlId="formBasicEmail">
@@ -58,20 +59,19 @@ function StudentLogin(){
                    </Form.Group>
                    {/* this link takes to forgot password page */}
                    <Form.Group controlId="formBasicCheckbox">
-                      <Form.Text><Link style={{color:"white"}} to="/forgotPassword">Forgot passward</Link></Form.Text>
+                      <Form.Text><Link style={{color:"white"}} to="/forgotPassword">Forgot Password?</Link></Form.Text>
                    </Form.Group>
                     
                   {/* form submit button */}
                    <Button variant="success" size="lg" block type="submit">
                    Sign in
                    </Button>
-                   <Form.Text>Click <Link style={{color:"white",textDecoration:"underline"}} to="/register">here</Link> to register</Form.Text>
+               
                   
                </Form>
             
           </div>
-          {/* adding footer */}
-          <footer style={{textAlign:"center",color:"white",fontSize:"10px"}}>Pic-Credit@Phocus</footer>
+
 
          </div>  
                
