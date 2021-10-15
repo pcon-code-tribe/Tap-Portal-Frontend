@@ -2,6 +2,7 @@
 import Dashboard from "./components/views/Dashboard";
 import UserProfile from "./components/views/UserProfile";
 import toApply from "./components/views/toApply.js";
+// import toApply from "./components/Table/index"
 import allAppliedList from "./components/views/allAppliedList.js";
 import Notifications from "./components/views/Notifications.js";
 
