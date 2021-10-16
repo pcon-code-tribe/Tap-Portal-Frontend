@@ -15,11 +15,11 @@ function Dashboard() {
            }}>
            <br></br>
       <div style={{
-        backgroundColor : "rgba(179,185,191,0.3)",
+        backgroundColor : "rgba(30,30,30,0.5)",
         borderRadius :"2vh",
         padding : "20px 40px",
-        WebkitBackdropFilter :"blur(10px)",
-        backdropFilter: "blur(3px)"
+        // WebkitBackdropFilter :"blur(10px)",
+        // backdropFilter: "blur(3px)"
       }}>
         <h2 style={{color:"white"}}>Welcome to TAP</h2>
         <br></br>
