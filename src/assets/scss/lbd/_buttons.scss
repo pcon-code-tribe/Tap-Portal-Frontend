@@ -3,7 +3,7 @@
     background-color: $transparent-bg;
     font-weight: $font-weight-normal;
 
-   
+
     padding: $padding-base-vertical $padding-base-horizontal;
 
     @include btn-styles($default-color, $default-states-color);
@@ -80,7 +80,7 @@
     &.btn-icon{
         padding: $padding-base-vertical;
     }
-   
+
 }
 .btn-lg{
    @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $border-radius-large);
@@ -116,6 +116,17 @@
 .btn-facebook{
     border-color: $social-facebook;
     color: $social-facebook;
+
+    &:hover{
+        opacity: 1 !important;
+        border-color: $social-google;
+        color: #1DC7EA;
+    }
+}
+
+.btn-linkedin{
+    border-color: $social-linkedin;
+    color: $social-linkedin;
 
     &:hover{
         opacity: 1 !important;

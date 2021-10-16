@@ -87,27 +87,27 @@ function User() {
                     </Col>
                   </Row>
                   <Row>
-                  <Col className="pr-1" md="5">
-                    <Form.Group>
-                      <label>12th Marks</label>
-                      <Form.Control
-                        placeholder="eg. 99.99%"
-                        type="text"
-                      ></Form.Control>
-                    </Form.Group>
-                  </Col>
-                  <Col className="pr-1" md="5">
-                    <Form.Group>
-                      <label>
-                        10th Marks
-                      </label>
-                      <Form.Control
-                        placeholder="eg. 10 CGPA or 99.99%"
-                        type="text"
-                      ></Form.Control>
-                    </Form.Group>
-                  </Col>   
-                </Row>
+                    <Col className="pr-1" md="5">
+                      <Form.Group>
+                        <label>12th Marks</label>
+                        <Form.Control
+                          placeholder="eg. 99.99%"
+                          type="text"
+                        ></Form.Control>
+                      </Form.Group>
+                    </Col>
+                    <Col className="pr-1" md="5">
+                      <Form.Group>
+                        <label>
+                          10th Marks
+                        </label>
+                        <Form.Control
+                          placeholder="eg. 10 CGPA or 99.99%"
+                          type="text"
+                        ></Form.Control>
+                      </Form.Group>
+                    </Col>   
+                  </Row>
                 
                   <Row>
                     <Col md="12">
@@ -127,7 +127,14 @@ function User() {
                   >
                     Upload Resume
                   </Button>
+                  
                   <div className="clearfix"></div>
+                  <Button
+                    className="btn-fill pull-right mt-1 btn-block btn-info"
+                    type="submit"
+                  >
+                    Save
+                  </Button>
                 </Form>
               </Card.Body>
             </Card>
