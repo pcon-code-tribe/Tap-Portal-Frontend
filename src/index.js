@@ -11,6 +11,7 @@ import ForgotPassword from "./components/ForgotPassword.jsx";
 import RetrieveSuccess from "./components/RetrieveSuccess.jsx";
 
 import AdminLayout from "./App.js";
+import Table from 'components/table/table';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Redirect from="/" to="/admin/dashboard" />
     </Switch>
     
+    {/* <Table></Table> */}
   </BrowserRouter>,
   document.getElementById("root")
  

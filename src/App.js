@@ -8,9 +8,11 @@ import Footer from "components/Footer/Footer";
 import Sidebar from "components/Sidebar/Sidebar";
 
 
+
 import routes from "routes.js";
 
 import sidebarImage from "assets/img/sidebar-3.jpg";
+import Table from "components/table/table";
 
 function Admin() {
   const [image] = React.useState(sidebarImage);
