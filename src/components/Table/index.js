@@ -16,6 +16,7 @@ import {
 
 import faker from 'faker';
 import { makeStyles } from '@material-ui/core';
+import './index.css';
 
 const useStyles = makeStyles((theme) => ({
     table: {
@@ -108,7 +109,7 @@ function MyTable() {
                 </TableCell>
                 <TableCell>{user.status}</TableCell>
                 <TableCell>
-                    <button className="apply-btn">Apply</button>
+                    <button>Apply</button>
                 </TableCell>
             </TableRow>
           ))}
